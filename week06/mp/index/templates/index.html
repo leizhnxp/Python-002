@@ -6,9 +6,7 @@
     <title>豆瓣电影短评</title>
     <!--
 
-    参考这里，需要下面这么个写法 https://docs.djangoproject.com/en/2.2/howto/static-files/#configuring-static-files
-    其实按说呢... 服务端模板引擎... 看怎么考虑这个问题了，比如前后端分离、静态化、CDN、反扒各种权衡
-    就是大概了解一下框架能力么，真正的设计抉择不是这里考量的重点
+    https://docs.djangoproject.com/en/2.2/howto/static-files/#configuring-static-files
 
     -->
     {% load static %}
@@ -20,7 +18,7 @@
 
     <!--
 
-    也正是服务端模板引擎这个玩意儿么，所以下面两行先放着了，看后台，还是404的
+
 
     -->
     <script src="js/jquery.slim.min.js"></script>
@@ -35,7 +33,7 @@
     </form>
 </nav>
 <div class="container">
-    <h3 class="mt-5 mb-3">随便写的...内容都不是爬的</h3>
+    <h3 class="mt-5 mb-3">？？？</h3>
     <table class="table">
         <thead class="thead-light">
         <tr>
@@ -54,25 +52,6 @@
             <td>{{ comment.ts }}</td>
         </tr>
         {% endfor %}
-        <!-- 真的是太喜欢这部电影了，关于他的一切，所以，下面留着了 -->
-        <tr>
-            <th>1</th>
-            <td>妈妈说，生活就像一盒巧克力……请不要再续下一句，耳朵听的起了茧子。</td>
-            <td>4</td>
-            <td class="text-nowrap">2006-02-13</td>
-        </tr>
-        <tr>
-            <th>2</th>
-            <td>热血沸腾地看了很多遍以后才意识到这是个伪鸡汤。阿甘的人生处处开挂，Jenny的人生点背到发指，简直就是《地主家的傻儿子和贫农家的苦情山茶花》。核心剧情就是，你不要作，不要投机，踏实干活，诚恳做人。与社会主义核心价值观不谋而合。而片中的所有西方自由主义者下场皆不得好死。</td>
-            <td>4</td>
-            <td class="text-nowrap">2017-03-27</td>
-        </tr>
-        <tr>
-            <th>3</th>
-            <td>羡慕珍妮，不管她多么叛逆、落魄、堕落，永远有阿甘在等她回来</td>
-            <td>5</td>
-            <td class="text-nowrap">2008-08-12</td>
-        </tr>
         </tbody>
     </table>
 </div>

@@ -7,10 +7,10 @@ from .models import ShortComment
 
 
 def index(request):
-    return HttpResponse("Hello there Django!")
+    return HttpResponse("Hello there Django routes !")
 
 
 def homework(request):
-    short_comments = [{'id': 1, 'content': "something", 'stars': 3, 'ts': '2020-08-30'}]
-    short_comments = ShortComment.objects.all()
+    #
+    short_comments = ShortComment.objects.filter(stars__gte=1)[2:5:2]
     return render(request, 'index.html', locals())
